@@ -1,0 +1,1 @@
+../../../../Vendor/SwaggerClient/SwaggerClient/Api/SWGPositionApi.h

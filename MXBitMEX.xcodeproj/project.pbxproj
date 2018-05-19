@@ -13,6 +13,7 @@
 		50B87D4220AFC89600B10425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B87D4120AFC89600B10425 /* Assets.xcassets */; };
 		50B87D4520AFC89600B10425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B87D4320AFC89600B10425 /* LaunchScreen.storyboard */; };
 		50B87D4820AFC89600B10425 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B87D4720AFC89600B10425 /* main.m */; };
+		E71B8501C533EA38E578D4EB /* libPods-MXBitMEX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B1AB10E8D8E31B838A0DCE /* libPods-MXBitMEX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		50B87D4420AFC89600B10425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50B87D4620AFC89600B10425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B87D4720AFC89600B10425 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5484DABF5ED8CF564F516969 /* Pods-MXBitMEX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXBitMEX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXBitMEX/Pods-MXBitMEX.debug.xcconfig"; sourceTree = "<group>"; };
+		83B1AB10E8D8E31B838A0DCE /* libPods-MXBitMEX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXBitMEX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C22E58966F00A21A6FC9F4 /* Pods-MXBitMEX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXBitMEX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXBitMEX/Pods-MXBitMEX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71B8501C533EA38E578D4EB /* libPods-MXBitMEX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				50B87D3720AFC89600B10425 /* MXBitMEX */,
 				50B87D3620AFC89600B10425 /* Products */,
+				DED0F0395221834F977EC128 /* Pods */,
+				DA246AC3ADF777FE4E67A6F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = MXBitMEX;
 			sourceTree = "<group>";
 		};
+		DA246AC3ADF777FE4E67A6F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83B1AB10E8D8E31B838A0DCE /* libPods-MXBitMEX.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DED0F0395221834F977EC128 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5484DABF5ED8CF564F516969 /* Pods-MXBitMEX.debug.xcconfig */,
+				E9C22E58966F00A21A6FC9F4 /* Pods-MXBitMEX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B87D4B20AFC89600B10425 /* Build configuration list for PBXNativeTarget "MXBitMEX" */;
 			buildPhases = (
+				F19AE653287CCB6EEB4997B9 /* [CP] Check Pods Manifest.lock */,
 				50B87D3120AFC89600B10425 /* Sources */,
 				50B87D3220AFC89600B10425 /* Frameworks */,
 				50B87D3320AFC89600B10425 /* Resources */,
+				6C1F3E60A61137B34BDB5F92 /* [CP] Embed Pods Frameworks */,
+				7BC0B82541B9510114E2EC46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C1F3E60A61137B34BDB5F92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MXBitMEX/Pods-MXBitMEX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BC0B82541B9510114E2EC46 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MXBitMEX/Pods-MXBitMEX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F19AE653287CCB6EEB4997B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MXBitMEX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50B87D3120AFC89600B10425 /* Sources */ = {
@@ -276,6 +354,7 @@
 		};
 		50B87D4C20AFC89600B10425 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5484DABF5ED8CF564F516969 /* Pods-MXBitMEX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +369,7 @@
 		};
 		50B87D4D20AFC89600B10425 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C22E58966F00A21A6FC9F4 /* Pods-MXBitMEX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
