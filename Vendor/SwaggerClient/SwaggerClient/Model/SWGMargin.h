@@ -61,7 +61,7 @@
 
 @property(nonatomic) NSNumber* taxableMargin;
 
-@property(nonatomic) NSNumber* initMargin;
+@property(nonatomic) NSNumber* marginInit;//initMargin
 
 @property(nonatomic) NSNumber* maintMargin;
 

@@ -35,7 +35,7 @@
 
 @property(nonatomic) NSNumber* commission;
 
-@property(nonatomic) NSNumber* initMarginReq;
+@property(nonatomic) NSNumber* marginReqInit;//initMarginReq
 
 @property(nonatomic) NSNumber* maintMarginReq;
 
@@ -141,7 +141,7 @@
 
 @property(nonatomic) NSNumber* taxableMargin;
 
-@property(nonatomic) NSNumber* initMargin;
+@property(nonatomic) NSNumber* marginInit;//initMargin
 
 @property(nonatomic) NSNumber* maintMargin;
 

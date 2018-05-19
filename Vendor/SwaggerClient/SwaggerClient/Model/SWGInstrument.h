@@ -87,7 +87,7 @@
 
 @property(nonatomic) NSNumber* isInverse;
 
-@property(nonatomic) NSNumber* initMargin;
+@property(nonatomic) NSNumber* marginInit;//initMargin
 
 @property(nonatomic) NSNumber* maintMargin;
 
